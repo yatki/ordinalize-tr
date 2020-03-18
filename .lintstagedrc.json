@@ -1,4 +1,9 @@
 {
-  "*.{js,ts}": ["prettier --write", "eslint", "jest --no-coverage", "git add"],
+  "*.{js,ts}": [
+    "prettier --write",
+    "eslint",
+    "jest --findRelatedTests --no-coverage",
+    "git add"
+  ],
   "*.{json,md}": ["prettier --write", "git add"]
 }
