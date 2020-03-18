@@ -2,6 +2,12 @@
 
 > Add ordinal suffix to a number - for Turkish language
 
+[![NPM version](https://badge.fury.io/js/ordinalize-tr.svg)](https://www.npmjs.com/package/ordinalize-tr)
+[![npm](https://img.shields.io/npm/dt/ordinalize-tr.svg)](https://www.npmjs.com/package/ordinalize-tr)
+[![Coverage Status](https://coveralls.io/repos/github/yatki/ordinalize-tr/badge.svg?branch=master&)](https://coveralls.io/github/yatki/ordinalize-tr?branch=master)
+
+✅ It can calculate all ordinal suffixes, up to Trillion and beyond! 🚀
+
 ## Install
 
 ```bash
