@@ -1,0 +1,8 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#08342C",
+    "titleBar.activeBackground": "#0B483E",
+    "titleBar.activeForeground": "#F2FDFB"
+  },
+  "typescript.validate.enable": true
+}
