@@ -12,6 +12,7 @@
     "README.md"
   ],
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "rollup -c rollup.config.ts",
     "lint": "eslint .",
     "test": "jest"
@@ -20,9 +21,20 @@
     "type": "git",
     "url": "git+https://github.com/yatki/ordinalize-tr.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "ordinal",
+    "suffix",
+    "number",
+    "turkish",
+    "tr",
+    "tr-TR",
+    "i18n",
+    "internationalization",
+    "localization",
+    "l10n"
+  ],
+  "author": "Mehmet Yatkı <mehmet@yatki.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yatki/ordinalize-tr/issues"
   },
@@ -40,6 +52,7 @@
     "jest": "25.1.0",
     "lint-staged": "10.0.7",
     "prettier": "1.19.1",
+    "rimraf": "3.0.2",
     "rollup": "2.1.0",
     "rollup-plugin-terser": "5.3.0",
     "rollup-plugin-typescript2": "0.26.0",
