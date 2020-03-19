@@ -1,3 +1,4 @@
+const pow = (n: number): number => 10 ** n;
 const getSuffix = (number: number): string => {
   const suffixes = {
     1: 'inci',
@@ -21,17 +22,17 @@ const getSuffix = (number: number): string => {
     90: 'ıncı',
 
     100: 'üncü',
-    [10 ** 3]: 'inci',
-    [10 ** 4]: 'inci',
-    [10 ** 5]: 'inci',
+    [pow(3)]: 'inci',
+    [pow(4)]: 'inci',
+    [pow(5)]: 'inci',
 
-    [10 ** 6]: 'uncu',
-    [10 ** 7]: 'uncu',
-    [10 ** 8]: 'uncu',
+    [pow(6)]: 'uncu',
+    [pow(7)]: 'uncu',
+    [pow(8)]: 'uncu',
 
-    [10 ** 9]: 'ıncı',
-    [10 ** 10]: 'ıncı',
-    [10 ** 11]: 'ıncı',
+    [pow(9)]: 'ıncı',
+    [pow(10)]: 'ıncı',
+    [pow(11)]: 'ıncı',
   };
 
   // Zero is exception
@@ -40,7 +41,7 @@ const getSuffix = (number: number): string => {
   }
 
   let tempNumber = number;
-  const positions = [10, 100, 1000, 10 ** 6, 10 ** 9, 10 ** 12];
+  const positions = [10, 100, 1000, pow(6), pow(9), pow(12)];
   for (let i = 0; i < positions.length; i += 1) {
     const position = positions[i];
     const remaining = tempNumber % position;
